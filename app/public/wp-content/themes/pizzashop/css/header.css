@@ -1,0 +1,55 @@
+.site-header {
+  padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .site-header .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+}
+
+.logo a {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 80%;
+  max-width: 15rem;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    width: 80%;
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-header {
+    grid-column: 3 / 4;
+  }
+}
+
+.address {
+  padding: 2rem 0;
+}
+
+.address p {
+  margin: 0;
+  text-align: right;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .address p {
+    line-height: 1.5;
+    text-align: right;
+  }
+}

@@ -1,0 +1,102 @@
+/*
+
+  Theme Name: Pizza Shop
+  Theme URI:
+  Author: Pol Gasull Navarro
+  Author URI:
+  Description: Pizza Theme
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  Licene URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Tags: Gutenberg, Flexbox, Mobile First
+  Text Domain: pizzashop
+
+*/
+
+:root {
+  --mainFont: 'Open Sans', sans-serif;
+  --headingFont: 'Raleway', sans-serif;
+
+  --red: #a61206;
+  --orange: #f19f30;
+  --green: #127427;
+  --white: #ffffff;
+  --black: #000000;
+  --lightGrey: #c1c1c1;
+
+  --container: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--mainFont);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 5rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--headingFont);
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 95%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
