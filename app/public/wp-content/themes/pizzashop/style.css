@@ -139,7 +139,47 @@ img {
   color: var(--white);
 }
 
+.primary-button:hover {
+  background-color: #e2932b;
+}
+
 .secondary-button {
   background-color: var(--red);
   color: var(--white);
+}
+
+.next, .prev {
+  padding: 1rem 3rem;
+  display: inline-block;
+  flex: 0 0 auto;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--headingFont);
+  text-transform: uppercase;
+  border-radius: .5rem;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.next:hover, .prev:hover {
+  background-color: #841006;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.pagination a:first-of-type {
+  margin-right: 2rem;
 }

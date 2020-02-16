@@ -21,6 +21,21 @@ function pizzashop_menus() {
 
 add_action('init', 'pizzashop_menus');
 
+/** Widgets */
+
+function pizzashop_widgets() {
+  register_sidebar(array(
+    'name' => 'Blog sidebar',
+    'id' => 'blog_sidebar',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div>',
+    'after_title' => '</div>'
+  ));
+}
+
+add_action('widgets_init', 'pizzashop_widgets');
+
 function pizzashop_styles() {
   // sheet styles
   wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css', array(), '8.0.1');
@@ -28,6 +43,7 @@ function pizzashop_styles() {
   wp_enqueue_style('googleFont', 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900|Staatliches&display=swap', array(), '1.0.0');
   wp_enqueue_style('header', get_template_directory_uri().'/css/header.css', array(), '1.0.1');
   wp_enqueue_style('footer', get_template_directory_uri().'/css/footer.css', array(), '1.0.1');
+  wp_enqueue_style('sidebar', get_template_directory_uri().'/css/sidebar.css', array(), '1.0.1');
   wp_enqueue_style('menus', get_template_directory_uri().'/css/menus.css', array(), '1.0.1');
   wp_enqueue_style('pages', get_template_directory_uri().'/css/pages.css', array(), '1.0.1');
   wp_enqueue_style('blog', get_template_directory_uri().'/css/blog.css', array(), '1.0.1');
