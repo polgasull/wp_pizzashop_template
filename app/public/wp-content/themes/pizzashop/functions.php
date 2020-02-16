@@ -1,5 +1,11 @@
 <?php
 
+function pizzashop_setup() {
+  add_theme_support('post-thumbnails');
+
+}
+add_action('after_setup_theme', 'pizzashop_setup');
+
 /** CSS & JS */
 
 function pizzashop_menus() {
