@@ -96,7 +96,50 @@ ul {
   margin: 0 auto;
 }
 
+.section {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    position: relative; 
+    margin-top: -9rem;
+    background-color: var(--white);
+    margin-top: -9rem;
+    padding: 6rem;
+  } 
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+.button {
+  padding: 1rem 3rem;
+  display: block;
+  flex: 1;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--headingFont);
+  text-transform: uppercase;
+  border-radius: .5rem;
+}
+
+@media (min-width: 768px) {
+  .button {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+}
+
+.primary-button {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.secondary-button {
+  background-color: var(--red);
+  color: var(--white);
 }
